@@ -1,4 +1,5 @@
 import json
+
 from django.shortcuts import redirect
 from inertia import render
 from django import views
@@ -33,7 +34,6 @@ class Login(views.View):
 
     def post(self, request: HttpRequest, *args, **kwargs) -> HttpResponse:
         form = LoginForm(json.loads(request.body))
-        print(form)
 
         if not form.is_valid():
             return render(
