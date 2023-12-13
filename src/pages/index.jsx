@@ -1,13 +1,15 @@
 import React from "react";
+import ReactSVG from "/images/react.svg";
 
 export default function IndexPage(props) {
   return (
     <div className="text-center h-screen flex justify-center flex-col items-center p-4">
       <img
-        className="w-full lg:w-[60%]"
-        src="/static/django_breeze/django-breeze-logo.jpg"
+        className="w-64"
+        src={ReactSVG}
         alt=""
       />
+      <div className="h-20"></div>
       <h1 className="text-3xl font-bold">Welcome, Django Breeze</h1>
       <p className="text-green-600 mb-5">Your project is setup successfully!</p>
       <h3 className="text-slate-500">Powered by:</h3>
