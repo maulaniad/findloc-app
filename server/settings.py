@@ -134,3 +134,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Inertia Backend Settings
+INERTIA_SSR_URL=os.getenv('SSR_URL')
+INERTIA_SSR_ENABLED=os.getenv('SSR_ENABLED')
