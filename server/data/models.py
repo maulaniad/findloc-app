@@ -6,7 +6,7 @@ class User(models.Model):
     fullname = models.CharField(max_length=50)
     email = models.EmailField(max_length=254)
     username = models.CharField(max_length=16)
-    password = models.CharField(max_length=75)
+    password = models.CharField(max_length=254)
 
     class Meta:
         db_table = "USER"
