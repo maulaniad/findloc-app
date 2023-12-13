@@ -129,3 +129,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Inertia Backend Settings
 INERTIA_SSR_URL=os.getenv('SSR_URL')
 INERTIA_SSR_ENABLED=os.getenv('SSR_ENABLED')
+CSRF_HEADER_NAME = 'HTTP_X_XSRF_TOKEN'
+CSRF_COOKIE_NAME = 'XSRF-TOKEN'
