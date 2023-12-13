@@ -1,7 +1,7 @@
-import { Link, router } from "@inertiajs/react";
+import { Link } from "@inertiajs/react";
 
 
-const Test = ({test}) => {
+const TestPage = ({test}) => {
   return (
     <div>
       <h1>TEST</h1>
@@ -12,4 +12,4 @@ const Test = ({test}) => {
   )
 }
 
-export default Test;
+export default TestPage;
